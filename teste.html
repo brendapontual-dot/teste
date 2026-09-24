@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brenda Pontual Guedes | Portfólio & Currículo</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --primary-color: #0f766e; /* Tom verde/azul voltado para geotecnologias */
+            --primary-light: #ccfbf1;
+            --secondary-color: #0284c7;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #115e59 0%, #0f766e 100%);
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.05em;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            font-weight: 300;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            display: inline-block;
+            backdrop-filter: blur(5px);
+        }
+
+        main {
+            max-width: 1000px;
+            margin: -3rem auto 4rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #475569;
+        }
+
+        .grid-two-cols {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid-two-cols {
+                grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        .education-item, .experience-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .education-item:last-child, .experience-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #0f172a;
+        }
+
+        .item-subtitle {
+            color: var(--secondary-color);
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+
+        .item-date {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            margin-bottom: 0.5rem;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #334155;
+            transition: all 0.2s ease;
+        }
+
+        .skill-tag:hover {
+            background-color: var(--primary-light);
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .project-card {
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: 12px;
+            background-color: #fafafa;
+        }
+
+        .contact-list {
+            list-style: none;
+        }
+
+        .contact-list li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-list a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-list a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Brenda Pontual Guedes</h1>
+            <p>Aluna de Tecnologia em Geoprocessamento no IFPB</p>
+            <span class="badge">📍 João Pessoa, PB</span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sobre Mim -->
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Graduanda em Geoprocessamento pelo Instituto Federal da Paraíba (IFPB). Tenho grande interesse no desenvolvimento de soluções voltadas para a análise de dados espaciais, cartografia digital, sensoriamento remoto e automação de processos geográficos usando Python.</p>
+            <p>Busco oportunidades de estágio e projetos de pesquisa onde eu possa aplicar conhecimentos em SIG (Sistemas de Informação Geográfica) para resolver problemas socioambientais e urbanos.</p>
+        </section>
+
+        <div class="grid-two-cols">
+            <!-- Formação Acadêmica -->
+            <section id="formacao">
+                <h2>Formação Acadêmica</h2>
+                <div class="education-item">
+                    <div class="item-title">Tecnologia em Geoprocessamento</div>
+                    <div class="item-subtitle">Instituto Federal de Educação, Ciência e Tecnologia da Paraíba (IFPB)</div>
+                    <div class="item-date">Período: 2024 - Presente (Previsão de conclusão: 2027)</div>
+                </div>
+                <div class="education-item">
+                    <div class="item-title">Curso Extensão de Python para Análise de Dados Espaciais</div>
+                    <div class="item-subtitle">IFPB Campus João Pessoa</div>
+                    <div class="item-date">Concluído em 2025 (40 horas)</div>
+                </div>
+            </section>
+
+            <!-- Habilidades -->
+            <section id="habilidades">
+                <h2>Habilidades Técnicas</h2>
+                <div class="skills-container">
+                    <span class="skill-tag">QGIS</span>
+                    <span class="skill-tag">ArcGIS Pro</span>
+                    <span class="skill-tag">Python (Geopandas / Shapely)</span>
+                    <span class="skill-tag">Banco de Dados (PostgreSQL / PostGIS)</span>
+                    <span class="skill-tag">Sensoriamento Remoto</span>
+                    <span class="skill-tag">Fotogrametria com Drones</span>
+                    <span class="skill-tag">Cartografia Temática</span>
+                    <span class="skill-tag">Modelagem Numérica de Terreno (MNT)</span>
+                </div>
+            </section>
+        </div>
+
+        <!-- Projetos Destacados -->
+        <section id="projetos">
+            <h2>Projetos de Destaque (Fictícios)</h2>
+            <div class="grid-two-cols">
+                <div class="project-card">
+                    <div class="item-title">Mapeamento de Uso e Ocupação do Solo</div>
+                    <div class="item-date">Projeto Acadêmico - 2025</div>
+                    <p>Classificação supervisionada de imagens de satélite Sentinel-2 para analisar a expansão urbana da região metropolitana de João Pessoa entre os anos de 2020 e 2025.</p>
+                </div>
+                <div class="project-card">
+                    <div class="item-title">Automação de Mapas Temáticos com Python</div>
+                    <p>Criação de scripts na biblioteca PyQGIS para automatizar a geração de mapas de risco de inundação de áreas vulneráveis, reduzindo o tempo de produção cartográfica em 60%.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <ul class="contact-list">
+                <li>📧 Email: <a href="mailto:brenda.guedes@email.com">brenda.guedes@email.com</a></li>
+                <li>📱 Telefone: (83) 99999-9999</li>
+                <li>💼 LinkedIn: <a href="https://linkedin.com" target="_blank">://linkedin.com</a></li>
+                <li>💻 GitHub: <a href="https://github.com" target="_blank">://github.com</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Brenda Pontual Guedes. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
